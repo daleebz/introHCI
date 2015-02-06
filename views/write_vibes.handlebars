@@ -79,8 +79,8 @@
                 <div class="col-lg-10 col-sm-2">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Find Vibes:<br>By Company</h2>
-                    <p id="help">Select a company to see reviews written by interns</p>
+                    <h2 class="section-heading">Write Your Vibe:</h2>
+                   
                     <p class="lead"> </p>
                 </div>
                 
@@ -90,12 +90,45 @@
     </div>
 
     <div class="container">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Google</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Yahoo</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Teradata</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Qualcomm</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Apple</button>
+        <h3>Project:</h3>
+        <textarea class="form-control" rows="4"></textarea>
+        <h3>Managment/Mentorship:</h3>
+        <textarea class="form-control" rows="4"></textarea>
+        <h3>Team:</h3>
+        <textarea class="form-control" rows="4"></textarea>
+        <h3>Work Environment:</h3>
+        <textarea class="form-control" rows="4"></textarea>
+
+        <h6>&nbsp;</h6>
+        <a class="btn btn-default btn-lg" href="/" role="button">Cancel</a>
+        
+
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Submit
+        </button>
+
+        <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Submitted!</h4>
+      </div>
+      <div class="modal-body">
+        Your Vibe has been submitted and can be found under the company you selected.
+      </div>
+      <div class="modal-footer">
+        
+        <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+      </div>
     </div>
+  </div>
+</div>
+
+    </div>
+
+
     <!-- /.content-section-a -->
 
     <!-- /.content-section-b -->
