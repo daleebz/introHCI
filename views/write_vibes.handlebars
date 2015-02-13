@@ -49,9 +49,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    {{#each users}}
                     <li>
-                        <a href="/login">Login</a>
+                        <a href="/login">{{usergreeting}}{{user1}}</a>
                     </li>
+                    {{/each}}
                     
                     <li>
                         <a href="/FAQ">FAQ</a>
@@ -70,33 +72,31 @@
 
     <!-- Page Content -->
 
-	<a  name="services"></a>
-    <div class="content-section-c">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-sm-2">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Write Your Vibe:</h2>
-                   
-                    <p class="lead"> </p>
-                </div>
-                
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-
     <div class="container">
-        <h3>Project: (was your project meaningful to you? what did you learn?)</h3>
-        <textarea class="form-control" rows="4"></textarea>
-        <h3>Managment/Mentorship: (who was your manager? did you learn from them?)</h3>
-        <textarea class="form-control" rows="4"></textarea>
-        <h3>Team: (what kind of people composed your team? did you enjoy working with them?)</h3>
-        <textarea class="form-control" rows="4"></textarea>
-        <h3>Work Environment: (was your comapny relaxed or strict? did you get to choose your own schedule?)</h3>
-        <textarea class="form-control" rows="4"></textarea>
+        <form id="addFriendForm" role="form" method="get" action="/add">
+        <h3>>&nbsp;</h3>
+        <h3>Write your vibe</h3>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="project">Project:</label>
+          <input type="text" class="form-control" id="project" placeholder="Project" name="project">  
+        </div>
+        <div class="form-group">
+          <label for="managment">Management:</label>
+          <input type="text" class="form-control" id="management" placeholder="Management" name="management">  
+        </div>
+        <div class="form-group">
+          <label for="team">Team:</label>
+          <input type="text" class="form-control" id="team" placeholder="Team" name="team">  
+        </div>
+        <div class="form-group">
+          <label for="work environment">Work Environment:</label>
+          <input type="text" class="form-control" id="workenvironment" placeholder="Work Environment" name="workenvironment">  
+        </div>
+        <div>
         <h6>&nbsp;</h6>
         <select class="selectpicker">
             <option>Google</option>
@@ -105,14 +105,18 @@
             <option>Qualcomm</option>
             <option>Apple</option>
         </select>
+        <h6>&nbsp;</h6>
+        </div>
+        <input type="submit" id="submitBtn" class="btn btn-primary btn-lg" value="Add Vibe!"></input>
+        </form>
 
+        
+      
         <h6>&nbsp;</h6>
         <a class="btn btn-default btn-lg" href="/" role="button">Cancel</a>
         
 
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Submit
-        </button>
+        <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" onclick="myfunction()"data-target="#myModal">Submit</button> -->
 
         <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -138,23 +142,20 @@
     </div>
 
 
-    <!-- /.content-section-a -->
-
-    <!-- /.content-section-b -->
-
-   
-
-	
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+
+    <script>
+    function myfunction(){
+        var first = $('#workenvironment').val();
+        console.log(first);
+
+    }
+    </script>
 
 </body>
 

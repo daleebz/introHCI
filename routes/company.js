@@ -1,3 +1,9 @@
+
+var data = require('../data.json');
+
+
 exports.view = function(req, res){
-  res.render('company');
+
+  res.render('company', data);
+  
 };

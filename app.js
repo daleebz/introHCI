@@ -15,6 +15,7 @@ var FAQ = require('./routes/FAQ');
 var login = require('./routes/login');
 var help = require('./routes/help');
 var company = require('./routes/company');
+var add = require('./routes/add');
 
 var project = require('./routes/project');
 // Example route
@@ -51,6 +52,9 @@ app.get('/write_vibes', write_vibes.view);
 app.get('/login', login.view);
 app.get('/help', help.view);
 app.get('/company', company.view);
+app.get('/add', add.addFriend);
+
+
 
 app.get('/FAQ', FAQ.view);
 

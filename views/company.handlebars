@@ -49,9 +49,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    
+                    {{#each users}}
                     <li>
-                        <a href="/login">Login</a>
+                        <a href="/login">{{usergreeting}}{{user1}}</a>
                     </li>
+                    {{/each}}
                     
                     <li>
                         <a href="/FAQ">FAQ</a>
@@ -63,17 +66,35 @@
         <!-- /.container -->
     </nav>
 
-
-    <div class="row text-center">
-        <img src="http://n-media.net/wp-content/uploads/2013/05/Web-under-construction.jpeg" class="img-responsive" alt="Cinque Terre">
+    <div class="container">
+        <h2>&nbsp</h2>
+        <h1> Recent [Insert Company Name] Vibes</h1>
     </div>
+</div>
 
-	
+
+    {{#each vibes}}
+    <div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h2>{{name}}</h2></div>
+        <div class="panel-body">
+        <h4>Project:</h4>
+        <p>{{project}}</p>
+        <h4>Managment</h4>
+        <p>{{managment}}</p>
+        <h4>Team:</h5>
+        <p>{{team}}</p>
+        <h4>Work Environment </h4>
+        <p>{{workenvirontment}}</p>
+    </div>
+    </div>
+</div>
+    {{/each}}
+
     <!-- /.banner -->
 
     <!-- Footer -->
     
-
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 

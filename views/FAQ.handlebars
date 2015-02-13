@@ -49,9 +49,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+
+                    {{#each users}}
                     <li>
-                        <a href="/login">Login</a>
+                        <a href="/login">{{usergreeting}}{{user1}}</a>
                     </li>
+                    {{/each}}
                     
                     <li>
                         <a href="/FAQ">FAQ</a>
@@ -63,9 +66,15 @@
         <!-- /.container -->
     </nav>
 
-    
-    <div class="row text-center">
-        <img src="http://n-media.net/wp-content/uploads/2013/05/Web-under-construction.jpeg" class="img-responsive" alt="Cinque Terre">
+    <div>
+        <h2>&nbsp</h2>
+    </div>
+
+    <div class="container">
+    <h2>FAQ</h2>
+    <h3>Will be populated after we conduct user testing</h3>
+    <p>Frequently asked questions (FAQ) or Questions and Answers (QA), are listed questions and answers, all supposed to be commonly asked in some context, and pertaining to a particular topic. The format is commonly used on email mailing lists and other online forums, where certain common questions tend to recur."FAQ" is pronounced as either an initialism (F-A-Q) or an acronym. Since the acronym FAQ originated in textual media, its pronunciation varies; "fack", "faak", "fax", and "facts" are commonly heard.[1] Depending on usage, the term may refer specifically to a single frequently asked question, or to an assembled list of many questions and their answers. Some web page designers may label the list of questions as "FAQ," such as on Google.com,[2] other websites use "FAQs," such as on United States Treasury sites.[3]
+    </p>
     </div>
     
 

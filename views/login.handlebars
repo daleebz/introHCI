@@ -49,9 +49,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    {{#each users}}
                     <li>
-                        <a href="/login">Login</a>
+                        <a href="/login">{{usergreeting}}{{user1}}</a>
                     </li>
+                    {{/each}}
                     
                     <li>
                         <a href="/FAQ">FAQ</a>
@@ -63,9 +65,19 @@
         <!-- /.container -->
     </nav>
 
-    <div class="row text-center">
-        <img src="http://n-media.net/wp-content/uploads/2013/05/Web-under-construction.jpeg" class="img-responsive" alt="Cinque Terre">
+    <div>
+        <h2>&nbsp</h2>
     </div>
+
+    <div class="container">
+    <div class="row text-center">
+        <img src="http://www.cs.berkeley.edu/~job/Classes/CS294-PhysicallyBasedAnimation/CS294-Physically_Based_Animation/Spring_2009_Class_Roster_files/n1036380734_30554977_4868.jpg" class="img-responsive" alt="Cinque Terre">
+    </div>
+    <h3>Hello Kevin</h3>
+
+    </div>
+
+    
 
     
 

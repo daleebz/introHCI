@@ -49,9 +49,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    {{#each users}}
                     <li>
-                        <a href="/login">Login</a>
+                        <a href="/login">{{usergreeting}}{{user1}}</a>
                     </li>
+                    {{/each}}
                     
                     <li>
                         <a href="/FAQ">FAQ</a>
@@ -63,7 +65,6 @@
         <!-- /.container -->
     </nav>
 
-
     <!-- Header -->
     <a name="about"></a>
     <div class="intro-header">
@@ -73,7 +74,7 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>Intern Vibes</h1>
-                        <h3>disover you internship</h3>
+                        <h3>discover your internship</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
@@ -117,16 +118,6 @@
 
     </div>
     <!-- /.content-section-a -->
-
-    <!-- /.content-section-b -->
-
-    
-
-	
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

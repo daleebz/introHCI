@@ -49,9 +49,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    {{#each users}}
                     <li>
-                        <a href="/login">Login</a>
+                        <a href="/login">{{usergreeting}}{{user1}}</a>
                     </li>
+                    {{/each}}
                     
                     <li>
                         <a href="/FAQ">FAQ</a>
@@ -62,6 +64,16 @@
         </div>
         <!-- /.container -->
     </nav>
+
+
+    {{#each friends}}
+    <div class="container">
+        <img src="{{imageURL}}" class="img-responsive" alt="Responsive image">
+        
+        <a href"#"> <h3 class="NName"> {{name}} </h3> </a>
+        <p>{{description}}</p>
+    </div>
+    {{/each}}
 
 
     <!-- Header -->
