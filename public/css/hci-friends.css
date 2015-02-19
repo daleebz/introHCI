@@ -9,13 +9,18 @@
 	color: #CC00AA;
 }
 
-.ayylmao {
-    margin-left: 20px;
-    
-    padding: 20px;
-    width: 300px;
+.vibn {
+
+	background-color: #5cb85c
 }
 
-h1, h2, h3, h4, h5 {
-	color: #8382BF;
+.bad {
+
+	background-color: #d9534f
 }
+
+.ok {
+
+	background-color: #f0ad4e
+}
+

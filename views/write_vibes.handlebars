@@ -17,6 +17,8 @@
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
 
+
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -75,9 +77,9 @@
     <div class="container">
         <form id="addFriendForm" role="form" method="get" action="/add">
         <h3>>&nbsp;</h3>
-        <h3>Write your vibe</h3>
+        <h1>Write your vibe</h1>
         <div class="form-group">
-          <label for="name">Name:</label>
+          <label for="name"><h2>Name:</h2></label>
           <input type="text" class="form-control" id="name" placeholder="Name" name="name">
         </div>
         <div class="form-group">
@@ -97,28 +99,34 @@
           <input type="text" class="form-control" id="workenvironment" placeholder="Work Environment" name="workenvironment">  
         </div>
         <div>
-        <h6>&nbsp;</h6>
-        <select class="selectpicker">
+        <p>&nbsp;</p>
+        <select class="selectpicker" name="company">
             <option>Google</option>
             <option>Yahoo</option>
             <option>Teradata</option>
             <option>Qualcomm</option>
             <option>Apple</option>
         </select>
+
+        <p>&nbsp;</p>
+
+        <select class="selectpicker" name="quality">
+            <option>bad</option>
+            <option>ok</option>
+            <option>vibn</option>
+        </select>
+        
         <h6>&nbsp;</h6>
         </div>
-        <input type="submit" id="submitBtn" class="btn btn-primary btn-lg" value="Add Vibe!"></input>
+        <input type="submit" id="submitBtn" class="btn btn-primary btn-lg" value="Add Vibe!">
+    <a class="btn btn-default btn-lg" href="/" role="button">Cancel</a></input>
         </form>
 
-        
-      
         <h6>&nbsp;</h6>
-        <a class="btn btn-default btn-lg" href="/" role="button">Cancel</a>
+        
         
 
-        <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" onclick="myfunction()"data-target="#myModal">Submit</button> -->
-
-        <!-- Modal -->
+        
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -142,10 +150,9 @@
     </div>
 
 
-    <!-- jQuery -->
+ 
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
 
