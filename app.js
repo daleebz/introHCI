@@ -53,6 +53,7 @@ app.get('/login', login.view);
 app.get('/help', help.view);
 app.get('/company', company.view);
 app.get('/add', add.addFriend);
+app.get('/company/:id', company.compid);
 
 
 
