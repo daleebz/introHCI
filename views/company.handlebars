@@ -23,7 +23,6 @@
 
     <link href="/css/hci-friends.css" rel="stylesheet" type="type/css">
 
-
 </head>
 
 <body>
@@ -40,17 +39,13 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand topnav" href="/"> Home </a>
-                <a class="navbar-brand topnav" href="/help">Help</a>
+                <a class="navbar-brand topnav" href="/help">About</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     
-                    {{#each users}}
-                    <li>
-                        <a href="/login">{{usergreeting}}{{user1}}</a>
-                    </li>
-                    {{/each}}
+                    
                     
                     <li>
                         <a href="/FAQ">FAQ</a>
@@ -62,9 +57,10 @@
         <!-- /.container -->
     </nav>
 
+    
     <div class="container">
         <h2>&nbsp</h2>
-        <h1> Recent Vibes</h1>
+        <h1> Recent {{vibes.0.company}} Vibes</h1>
     </div>
 </div>
 
@@ -81,8 +77,6 @@
         <p>{{team}}</p>
         <h4>Work Environment </h4>
         <p>{{workenvirontment}}</p>
-        <h4>Company</h4>
-        <p>{{company}}</p>
     </div>
     </div>
 </div>

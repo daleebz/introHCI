@@ -21,12 +21,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="/css/hci-friends.css" rel="stylesheet" type="type/css">
+
 
 </head>
 
@@ -44,16 +40,12 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand topnav" href="/"> Home </a>
-                <a class="navbar-brand topnav" href="/help">Help</a>
+                <a class="navbar-brand topnav" href="/help">About</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    {{#users}}
-                    <li>
-                        <a href="/login">{{usergreeting}}{{user1}}</a>
-                    </li>
-                    {{/users}}
+                    
                     
                     <li>
                         <a href="/FAQ">FAQ</a>
@@ -75,6 +67,7 @@
                     <div class="intro-message">
                         <h1>Intern Vibes</h1>
                         <h3>discover your internship</h3>
+
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
@@ -83,6 +76,10 @@
                             <li>
                                 <a href="write_vibes" class="btn btn-default btn-lg"></i> <span class="network-name">Write Vibes</span></a>
                             </li>
+
+                            <h1>&nbsp;</h1>
+
+                            <img src="http://www.pjfolio.co.uk/scrollArrow.png" class="center-block img-responsive " alt="Responsive image">
                             
                         </ul>
                     </div>
@@ -93,33 +90,37 @@
         <!-- /.container -->
 
     </div>
-    <!-- /.intro-header -->
+    
 
-    <!-- Page Content -->
+    <hr class="section-heading-spacer">
 
-	<a  name="services"></a>
-    <div class="content-section-a">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">The Internship Experience: <br>As told by interns</h2>
-                    <p class="lead"> A place for interns to share their stories and feeling regarding their past internships experiances. We want people to really get a feel for what it's like to work, day in and day out, at a company.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/intern_comp.jpg" alt="">
-                </div>
-            </div>
+    
+    <div class="container">
 
-        </div>
-        <!-- /.container -->
+        <h2>Recent Vibes</h2>
 
     </div>
-    <!-- /.content-section-a -->
 
-    <!-- jQuery -->
+    {{#each vibes}}
+    <div class="container">
+    <div class="panel panel-default {{quality}}">
+        <div class="panel-heading"><h2>{{company}}</h2></div>
+        <div class="panel-body">
+        <h4>Project:</h4>
+        <p>{{project}}</p>
+        <h4>Managment</h4>
+        <p>{{managment}}</p>
+        <h4>Team:</h5>
+        <p>{{team}}</p>
+        <h4>Work Environment </h4>
+        <p>{{workenvirontment}}</p>
+    </div>
+    </div>
+</div>
+
+
+    {{/each}}
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
