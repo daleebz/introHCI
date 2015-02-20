@@ -55,6 +55,9 @@
                     <li>
                         <a href="/FAQ">FAQ</a>
                     </li>
+                    <li>
+                        <a href="/suggestion">Suggestions</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -73,10 +76,18 @@
         <form id="addFriendForm" role="form" method="get" action="/add">
         <h3>>&nbsp;</h3>
         <h1>Write your vibe</h1>
-        <div class="form-group">
-          <label for="name"><h2>Name:</h2></label>
-          <input type="text" class="form-control" id="name" placeholder="Name" name="name">
-        </div>
+        <hr class="section-heading-spacer">
+        
+        <h3>Company</h3>
+        <select class="selectpicker" name="company">
+            <option>Google</option>
+            <option>Yahoo</option>
+            <option>Teradata</option>
+            <option>Qualcomm</option>
+            <option>Apple</option>
+        </select>
+
+         <p>&nbsp;</p>
         <div class="form-group">
           <label for="project">Project:</label>
           <textarea type="text" class="form-control" id="project" rows="3" placeholder="Project" name="project"></textarea> 
@@ -87,24 +98,15 @@
         </div>
         <div class="form-group">
           <label for="team">Team:</label>
-          <textarea type="text" class="form-control" id="team" rows="3" placeholder="Team" name="team"> </textarea> 
+          <textarea type="text" class="form-control" id="management" rows="3" placeholder="Team" name="team"></textarea>
         </div>
         <div class="form-group">
           <label for="work environment">Work Environment:</label>
           <textarea type="text" class="form-control" id="workenvironment" rows="3" placeholder="Work Environment" name="workenvironment"></textarea>
         </div>
         <div>
-        <p>&nbsp;</p>
-        <select class="selectpicker" name="company">
-            <option>Google</option>
-            <option>Yahoo</option>
-            <option>Teradata</option>
-            <option>Qualcomm</option>
-            <option>Apple</option>
-        </select>
-
-        <p>&nbsp;</p>
-
+        
+        <h3>How were the vibes?</h3>
         <select class="selectpicker" name="quality">
             <option>bad</option>
             <option>ok</option>
@@ -119,9 +121,7 @@
 
         <h6>&nbsp;</h6>
         
-        
-
-        
+      
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

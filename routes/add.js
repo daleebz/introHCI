@@ -10,7 +10,7 @@ var allVibes = google["vibes"]+yahoo["vibes"]+qualcomm["vibes"]+apple["vibes"]+t
 exports.addFriend = function(req, res) {    
 
    var newvibe = {
-        "name": req.query.name,
+        
         "project": req.query.project,
         "managment": req.query.management,
         "team": req.query.team,

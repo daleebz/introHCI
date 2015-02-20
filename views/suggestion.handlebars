@@ -12,16 +12,21 @@
     <title>InternVibes</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/css/landing-page.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <link href="/css/hci-friends.css" rel="stylesheet" type="type/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
@@ -46,10 +51,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     
                     
-                    
                     <li>
                         <a href="/FAQ">FAQ</a>
                     </li>
+
                     <li>
                         <a href="/suggestion">Suggestions</a>
                     </li>
@@ -60,35 +65,34 @@
         <!-- /.container -->
     </nav>
 
-    
-    <div class="container">
+    <div>
         <h2>&nbsp</h2>
-        <h1> Recent {{vibes.0.company}} Vibes</h1>
     </div>
-</div>
 
-    {{#each vibes}}
     <div class="container">
-    <div class="panel panel-default {{quality}}">
-        <div class="panel-heading"><h2></h2></div>
-        <div class="panel-body">
-        <h4>Project:</h4>
-        <p>{{project}}</p>
-        <h4>Managment</h4>
-        <p>{{managment}}</p>
-        <h4>Team:</h5>
-        <p>{{team}}</p>
-        <h4>Work Environment </h4>
-        <p>{{workenvirontment}}</p>
-    </div>
+    <div class="form-group">
+          <label for="work environment"><h2>Leave a Suggestion for the Site!</h2></label>
+          <textarea type="text" class="form-control" id="suggestion" rows="5" placeholder="Don't hold back!" name="workenvironment"></textarea>
     </div>
 </div>
-    {{/each}}
 
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="/">Submit!</a></li>
+            <li role="presentation"><a href="/">Cancel</a></li>
+        </ul>
+    </div>
+
+    
+
+    
+
+	
     <!-- /.banner -->
 
     <!-- Footer -->
     
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
